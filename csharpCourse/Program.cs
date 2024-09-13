@@ -15,7 +15,9 @@ namespace csharpCourse
             Console.WriteLine("4. Division");
             string valg = Console.ReadLine();
 
-            if(valg == "1")
+            userInput();
+
+            if (valg == "1")
             {
                 addition();
             }
@@ -32,9 +34,8 @@ namespace csharpCourse
                 division();
             }
 
-
-
-            static void addition()
+            
+            static void userInput()
             {
                 Console.WriteLine("Indtast tal 1");
                 string tal1 = Console.ReadLine();
@@ -44,9 +45,11 @@ namespace csharpCourse
 
                 double t1 = System.Convert.ToDouble(tal1);
                 double t2 = System.Convert.ToDouble(tal2);
+            }
 
-                double sum = t1 + t2;
-
+            static double addition() //Skal ændre retur type og tilføje parametre
+            {             
+                return sum = t1 + t2;
                 Console.WriteLine("Resultatet er: " + sum);
             }
 
