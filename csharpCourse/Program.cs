@@ -19,37 +19,40 @@ namespace csharpCourse
                 Console.WriteLine("5. Exit");
                 double input = Convert.ToDouble(Console.ReadLine());
 
-                Console.WriteLine("Indtast tal 1");
+                Console.WriteLine("Indtast tal 1"); //When exit is pressed, the program should close. Its not doing that.
                 double t1 = Convert.ToDouble(Console.ReadLine());
 
                 Console.WriteLine("Indtast tal 2");
                 double t2 = Convert.ToDouble(Console.ReadLine());
 
-                
+
 
                 if (input == 1)
                 {
                     double result = addition(t1, t2);
-                    Console.WriteLine("Resultatet er: " + result);
+                    Console.WriteLine("The result is : " + result);
                     Console.ReadKey();
                     Console.Clear();
 
                 }
                 else if (input == 2)
                 {
-                    //subtraktion();
+                    double result = substraktion(t1, t2);
+                    Console.WriteLine("The result is : " + result);
                     Console.ReadKey();
                     Console.Clear();
                 }
                 else if (input == 3)
                 {
-                    // multiplikation();
+                    double result = multiplikation(t1, t2);
+                    Console.WriteLine("The result is : " + result);
                     Console.ReadKey();
                     Console.Clear();
                 }
                 else if (input == 4)
                 {
-                    //division();
+                    double result = division(t1, t2);
+                    Console.WriteLine("The result is : " + result);
                     Console.ReadKey();
                     Console.Clear();
                 }
@@ -59,7 +62,7 @@ namespace csharpCourse
                 }
                 else
                 {
-                    Console.WriteLine("Ugyldigt input");
+                    Console.WriteLine("Unvalid input");
                 }
 
             }
@@ -77,53 +80,17 @@ namespace csharpCourse
                 return t1 - t2;
             }
 
-            //static void subtraktion()
-            //{
-            //    Console.WriteLine("Indtast tal 1");
-            //    string tal1 = Console.ReadLine();
+            double multiplikation(double t1, double t2)
+            {
+                return t1 * t2;
+            }
 
-            //    Console.WriteLine("Indtast tal 2");
-            //    string tal2 = Console.ReadLine();
+            double division(double t1, double t2)
+            {
+                return t1 / t2;
+            }
 
-            //    double t1 = System.Convert.ToDouble(tal1);
-            //    double t2 = System.Convert.ToDouble(tal2);
 
-            //    double sum = t1 - t2;
-
-            //    Console.WriteLine("Resultatet er: " + sum);
-            //}
-
-            //static void multiplikation()
-            //{
-            //    Console.WriteLine("Indtast tal 1");
-            //    string tal1 = Console.ReadLine();
-
-            //    Console.WriteLine("Indtast tal 2");
-            //    string tal2 = Console.ReadLine();
-
-            //    double t1 = System.Convert.ToDouble(tal1);
-            //    double t2 = System.Convert.ToDouble(tal2);
-
-            //    double sum = t1 * t2;
-
-            //    Console.WriteLine("Resultatet er: " + sum);
-            //}
-
-            //static void division()
-            //{
-            //    Console.WriteLine("Indtast tal 1");
-            //    string tal1 = Console.ReadLine();
-
-            //    Console.WriteLine("Indtast tal 2");
-            //    string tal2 = Console.ReadLine();
-
-            //    double t1 = System.Convert.ToDouble(tal1);
-            //    double t2 = System.Convert.ToDouble(tal2);
-
-            //    double sum = t1 / t2;
-
-            //    Console.WriteLine("Resultatet er: " + sum);
-            //}
 
 
         }
