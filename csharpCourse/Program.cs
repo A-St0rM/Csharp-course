@@ -19,6 +19,7 @@ namespace csharpCourse
                 Console.WriteLine("5. Exit");
                 double input = Convert.ToDouble(Console.ReadLine());
 
+
                 Console.WriteLine("Indtast tal 1"); //When exit is pressed, the program should close. Its not doing that.
                 double t1 = Convert.ToDouble(Console.ReadLine());
 
@@ -26,9 +27,9 @@ namespace csharpCourse
                 double t2 = Convert.ToDouble(Console.ReadLine());
 
 
-
                 if (input == 1)
                 {
+
                     double result = addition(t1, t2);
                     Console.WriteLine("The result is : " + result);
                     Console.ReadKey();
@@ -59,17 +60,20 @@ namespace csharpCourse
                 else if (input == 5)
                 {
                     state = false;
+
                 }
                 else
                 {
                     Console.WriteLine("Unvalid input");
                 }
 
+
+
             }
 
 
 
-            double addition(double t1, double t2) //Skal ændre retur type og tilføje parametre
+            double addition(double t1, double t2) //Methods for the different operations.
             {
                 return t1 + t2;
 
